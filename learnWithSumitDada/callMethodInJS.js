@@ -1,7 +1,7 @@
 // main object is person
 const person = {
-    ForCallMethod: function (){
-        return (this.firstName + " " + this.lastName);
+    ForCallMethod: function (city, country){
+        return (this.firstName + " " + this.lastName + " " + city + " " + country);
     }
 };
 
@@ -15,5 +15,5 @@ const person2 = {
     firstName: "Susmoy",
     lastName: "Malakar"
 };
-console.log(person.ForCallMethod.call(person1));
-console.log(person.ForCallMethod.call(person2));
+console.log(person.ForCallMethod.call(person1, "Sirajganj", " Bangladesh"));
+console.log(person.ForCallMethod.call(person2, "Khulna", "Bangladesh"));
