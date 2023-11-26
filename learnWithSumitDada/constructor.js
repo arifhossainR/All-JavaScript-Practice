@@ -1,3 +1,4 @@
+// class and constructor create an object of it's class. So constructor is like class in JS.
 function Myconstructor(first, last, age, color){
     this.firstName = first;
     this.lastName = last;
